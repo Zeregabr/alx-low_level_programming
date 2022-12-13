@@ -1,1 +1,1 @@
-We r striving
+hellooo
