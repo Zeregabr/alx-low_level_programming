@@ -17,7 +17,7 @@ void jack_bauer(void)
 				{
 					if (a >= 2 && b >= 4)
 					{
-						breake;
+						break;
 					}
 					else
 					{
