@@ -5,9 +5,10 @@
  * main -Entry
  * Return: always 0
  */
+
 int main(void)
 {
-	nt n;
+	int n;
 	int a;
 
 	srand(time(0));
