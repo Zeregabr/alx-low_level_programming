@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - Prints the program name, followed by a new line
@@ -9,7 +10,7 @@
 
 int main(int attribute((unused)) argc, char *argv[])
 {
-	printf("%s\n", argv[0]);
+	printf("%s\n", *argv);
 
 	return (0);
 }
