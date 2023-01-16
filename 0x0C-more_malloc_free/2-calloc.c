@@ -6,7 +6,7 @@
  * @nmemb: number of elements in array.
  * @size: size of elements of array.
  *
- * eturn: NULL is size or nmemb == 0.
+ * Return: NULL is size or nmemb == 0.
  * NULL if malloc fails.
  * Pointer to memory allocated if successful.
  */
