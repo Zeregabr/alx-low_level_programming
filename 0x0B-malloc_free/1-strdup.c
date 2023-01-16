@@ -7,7 +7,7 @@
  * Return: pointer of an array of chars
  */
 
-char *_strdup(char *str)char *_strdup(char *str)
+char *_strdup(char *str)
 {
 	char *strout;
 	unsigned int i, j;
@@ -25,4 +25,4 @@ char *_strdup(char *str)char *_strdup(char *str)
 		strout[j] = str[j];
 
 	return (strout);
-}
+i}
