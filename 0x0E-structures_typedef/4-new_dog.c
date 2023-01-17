@@ -4,7 +4,6 @@
 /**
  * _strlen - Finds the length of a string.
  * @str: The string to be measured.
- *
  * Return: The length of the string.
  */
 int _strlen(char *str)
