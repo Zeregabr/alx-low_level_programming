@@ -1,5 +1,18 @@
 #include "main.h"
+/**
+ * _strlen - Finds the length of a string.
+ * @str: The string to be measured.
+ * Return: The length of the string
+ */
+int _strlen(char *str)
+{
+	int i;
 
+	for(i = 0; str[i]; i++)
+		;
+
+	return (i);
+}
 /**
  * main - multiplies two positive numbers
  * @argc: n arg
