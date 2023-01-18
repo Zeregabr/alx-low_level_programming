@@ -2,35 +2,31 @@
 
 /**
  * main - multiplies two positive numbers
- * @argc: n arguments
- * @argv: args
- * Return: int
+ * @argc: n arg
+ * @argv: array of arguments
+ * Return: always 0
  */
 
 int main(int argc, char *argv[])
 {
-	unsigned long mul;
-	int i, j;
-
-	if (argc != 3)
-	{
-		printf("Error\n");
-		exit(98);
-	}
-	for (i = 1; i < argc; i++)
-	{
-		for (j = 0; argv[i][j] != '\0'; j++)
-		{
-			if (argv[i][j] > 57 || argv[i][j] < 48)
-			{
-				printf("Error\n");
-				exit(98);
-			}
-		}
-	}
-	mul = atol(argv[1]) *  atol(argv[2]);
-	printf("%lu\n", mul);
+	unsigned long int a, b, res;
 	
-	return (0);
+	int len_a, len_b;
+
+	len_a = _strlen(argv[1]);
+	len_b = _strlen(argv[2]);
+
+	for (i = 0; i < )
+
+		if (argc != 3)
+		{
+			printf("Error\n");
+			return (98);
+		}
+	a = atoi(argv[1]);
+	b = atoi(argv[2]);
+
+	res = mul(a, b);
+	printf("%d", res);
 }
 	
