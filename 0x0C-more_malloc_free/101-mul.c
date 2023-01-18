@@ -30,6 +30,7 @@ int main(int argc, char *argv[])
 	len_b = _strlen(argv[2]);
 
 	for (i = 0; i < )
+		;
 
 		if (argc != 3)
 		{
