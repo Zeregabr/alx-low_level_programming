@@ -1,32 +1,41 @@
+#include <stdlib.h>
 #include "main.h"
 
 /**
- * main - multiplies two positive numbers
- * @argc: n arguments
- * @argv: args
- * Return: int
+ * _realloc - reallocates a memory block using malloc
+ * @ptr: pointer to the memory previously allocated with a
+ * @old_size: size in bytes allocated for ptr.
+ * @new_size: size in bytes of new memory block
+ * Return: pointer to new mem block, NULL or ptr
  */
-int main(int argc, char *argv[])
+
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	unsigned long mul;
-	int i, j;
-	if (argc != 3)
+	char *nptr;
+	unsigned int i;
+
+	if (new_size == old_size)
+		return (ptr);
+	if ((new_size == 0) && (ptr != NULL))
 	{
-		printf("Error\n");
-		exit(98); 
+		free(ptr);
+		return (NULL);
 	}
-	 for (i = 1; i < argc; i++)
-	 {
-		 for (j = 0; argv[i][j] != '\0'; j++)
-		 {
-			  if (argv[i][j] > 57 || argv[i][j] < 48)
-			  {
-				  printf("Error\n");
-				  exit(98);
-			  }
-		 }
-	 }
-	 mul = atol(argv[1]) *  atol(argv[2]);
-	 printf("%lu\n", mul);
-	 return (0);
+	if (ptr == NULL)
+	{
+		nptr = malloc(new_size);
+		if (nptr == NULL)
+			return (NULL);
+	}
+	if (new_size > old_size && (ptr != NULL))
+	{
+		nptr = malloc(new_size);
+		if (nptr == NULL)
+			return (nptr);
+		for (i = 0; i < old_size; i++)
+			nptr[i] = *((char *)ptr + 1);
+		free(ptr);
+	}
+
+	return (nptr);
 }
