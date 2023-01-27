@@ -2,11 +2,11 @@
 
 /**
  * add_node - Adds a new node at the beginning
- * 	of a list_t list.
+ * of a list_t list.
  * @head: The head of the list_t list.
  * @str: The string to be added to the list_t list.
  * Return: NULL on failure and the address
- * 	of the new element on success.
+ * of the new element on success.
  */
 
 list_t *add_node(list_t **head, const char *str)
